@@ -57,6 +57,8 @@ Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF
 ------------------------------------------------------------------------------
 # Link-state DB
 
+(talk later...)
+
 ------------------------------------------------------------------------------
 # Virtual Connection to Remote Areas
 
