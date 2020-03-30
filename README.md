@@ -69,6 +69,11 @@ Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF
 (to be continued)
 
 ------------------------------------------------------------------------------
+# Default GW Route
+
+
+
+------------------------------------------------------------------------------
 # Link-state DB
 
 (talk later...)
