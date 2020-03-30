@@ -76,6 +76,7 @@ Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF
 ------------------------------------------------------------------------------
 # Virtual Connection to Remote Areas
 
+Vitual Links are established on a PPP basis between 2 Routers there are connected to common area, one of which shall be connected to OSPF Area0.
 
                         --------Area 0--------
                        |                     |
@@ -114,7 +115,14 @@ Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF
                  |    Area 100   |  |   Area 200    |
                  |               |  |               |
                  ----------------   -----------------
+
 Router N's config
+
+Each Router must under OSPF cmd config, like
+
+     Rn$ area <area> virtual-link <router ID>
+     
+area, these 2 routers connected to, and the virtual-link is establish thru.
 
 lo == loopback
 
