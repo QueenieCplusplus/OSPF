@@ -6,7 +6,7 @@ Open Shortest Path Forward
 
 * main part:
 
-> Single Area & Mulitple Area & Stub Area
+> Single Area & Mulitple Area & Stub Area (omit)
 
 > ROUTER ID cmd
 
@@ -76,8 +76,28 @@ https://github.com/QueenieCplusplus/GW
 ------------------------------------------------------------------------------
 # Link-state DB
 
-(talk later...)
+to see router's link-state db
+by entering cmd without param
 
+    r3$show ip ospf database
+    
+    > output
+    
+    OSPF Router wiht ID (10.0.0.3) (PID 1)
+    
+    
+             Router Link States (Area 0)
+     Link ID       ADV Router     Age      Seq$       Checksum    LinkCount
+     10.0.0.2      10.0.0.2                                          6
+                                   ...(omit)
+     192.168.255.5 192.168.255.5                                     2
+     
+                         
+             Net Link States (Area 0)
+      Link ID       ADV Router     Age      Seq$       Checksum
+     10.0.5.2      10.0.0.4       173     bits_val     hex_val
+             
+   
 ------------------------------------------------------------------------------
 # LB == Parallel Routes
 
