@@ -79,7 +79,7 @@ https://github.com/QueenieCplusplus/GW
 (talk later...)
 
 ------------------------------------------------------------------------------
-# LB
+# LB == Parallel Routes
 
 OSPF, like all other routing protocol (sources) available on Cisco Rputers, can install multi-routes for the same mask.
 
