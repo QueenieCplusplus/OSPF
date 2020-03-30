@@ -24,6 +24,8 @@ LB
 
 > show ip ospf database
 
+> show ip ospf vitual-links
+
 * virtual part:
 
 > Connection to Remote Area
