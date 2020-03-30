@@ -97,7 +97,7 @@ by entering cmd without param
                          
              Net Link States (Area 0)
       Link ID       ADV Router     Age      Seq$       Checksum
-     10.0.5.2      10.0.0.4       173     bits_val     hex_val
+     "10.0.5.2"      10.0.0.4       173     bits_val     hex_val
      "10.2.0.2"    10.0.0.3
      
  to see cmd output with param 10.0.0.4
@@ -113,6 +113,25 @@ by entering cmd without param
              
              
        link state id: 10.0.0.4
+       
+       Advertising router: 10.0.0.4
+       
+       Num of links: 6
+       
+           Link connected to : another Router (PPP)
+           (Link ID) Neibouring Router ID : 10.0.0.6 
+           (Link Data) Router Interface address: 172.16.0.9
+           ...
+           
+           Link connected to : a Stub Network
+           (Link ID) Network/Subnet number : 172.16.0.8
+           (Link Data) Network Mask: 255.255.255.252
+           ...
+           
+           Link connected to : a Transit Network
+           (Link ID) Designated Router Addr : "10.0.5.2"
+           (Link Data) Router Interface address: "10.0.5.2"
+           ...      
 
  to see cmd output with param 10.2.0.2
  
@@ -126,6 +145,13 @@ by entering cmd without param
              "Net" Link States (Area 0)
              
        Link state id: 10.2.0.2 (addr of designated router)
+       
+       Advertising router: 10.0.0.3
+       
+       Network Mask: /22
+       
+            Attached Router: 10.0.0.3
+            Attached Router: 10.0.0.2
       
              
    
