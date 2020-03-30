@@ -78,7 +78,8 @@ Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF
 
 Vitual Links are established on a PPP basis between 2 Routers there are connected to common area, one of which shall be connected to OSPF Area0.
 
-                        --------Area 0--------
+                       ---------Area 0--------
+                       |      BackBone       |
                        |                     |
                        |      segment1       |
                        |     10.0.1.0/24     |
@@ -98,8 +99,9 @@ Vitual Links are established on a PPP basis between 2 Routers there are connecte
          |                  |         |                  |
          |                 e0         e0                 |
          |                                               |
-         |                  |Segment10|                  |
+         |                   Segment10                   |
          |                  10.10.4.0/24                 |
+         |                                               |
          |                  |         |                  |
          |                  |         |                  |
          |                                               |
