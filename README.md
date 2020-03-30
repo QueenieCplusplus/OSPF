@@ -51,8 +51,79 @@ Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF
 
     $router-id <OSPF ID> 
     # OSPF id ranging from 0-255
-    
-
 
 (to be continued)
 
+------------------------------------------------------------------------------
+# Link-state DB
+
+------------------------------------------------------------------------------
+# Virtual Connection to Remote Areas
+
+
+                        --------Area 0--------
+                       |                     |
+                       |      segment1       |
+                       |     10.0.1.0/24     |
+                       |                     |
+                       |     |        |      |
+                       |    e0        e0     |
+                       ----(R)-------(R)------
+         -------------------|  Area10  |------------------
+         |                  s0        s0                 |
+         |                                               |
+         |                  |         |                  |
+         |                  |         |                  |
+         |                                               |
+         |                 s0        s0                  |
+         |                  |         |                  |
+         |                 (R)       (R)                 |
+         |                  |         |                  |
+         |                 e0         e0                 |
+         |                                               |
+         |                  |Segment10|                  |
+         |                  10.10.4.0/24                 |
+         |                  |         |                  |
+         |                  |         |                  |
+         |                                               |
+         |                 e0         e0                 |
+         |                  |         |                  |
+         -------------------(R)------ (R)-----------------
+                            |         |
+                 --------- to0----  --- to0 --------
+                 |           |   |  |    |          |
+                 |   segement100 |  | segement200   |
+                 | 10.100.1.0/24 |  | 10.200.1.0/24 |
+                 |               |  |               |
+                 |    Area 100   |  |   Area 200    |
+                 |               |  |               |
+                 ----------------   -----------------
+Router N's config
+
+lo == loopback
+
+e == thernet
+
+s == serial
+
+    $ip subnet-zero
+    
+    > interface lo0
+    > ip address 10.0.0.1 255.255.255.0
+    
+    > interface e0
+    > ip address 10.0.1.1 255.255.255.0
+    
+    > interface s0
+    > ip address 10.10.255.5 255.255.255.252
+    
+    bandwidth 64
+    
+    $router ospf 1
+    
+    > network 10.0.0.0. 0.0.255.255 area0
+    > network 10.10.0.0 0.0.255.255 area10
+    > area0 range 10.0.0.0. 255.255.0.0
+    > area0 range 10.10.0.0 255.255.0.0
+    > area10 virtual-link 10.0.0.5
+    
