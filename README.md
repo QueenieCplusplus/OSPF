@@ -22,6 +22,8 @@ LB
 
 > show ip ospf border-routers
 
+> show ip ospf database
+
 * virtual part:
 
 > Connection to Remote Area
