@@ -124,6 +124,8 @@ Each Router must under OSPF cmd config, like
      
 area, these 2 routers connected to, and the virtual-link is establish thru.
 
+router ID, the OSPF ID of the counterpart router.
+
 lo == loopback
 
 e == thernet
