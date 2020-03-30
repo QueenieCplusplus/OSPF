@@ -79,6 +79,18 @@ https://github.com/QueenieCplusplus/GW
 (talk later...)
 
 ------------------------------------------------------------------------------
+# LB
+
+OSPF, like all other routing protocol (sources) available on Cisco Rputers, can install multi-routes for the same mask.
+
+This feature enable LB of traffic destined for the same mask (network prefix).
+
+         $maximum paths <# of paths> 
+         # of paths, shall be under OSPF config
+         # max num is 4
+         # if param is 1 in value, then it means no LB.
+
+------------------------------------------------------------------------------
 # Virtual Connection to Remote Areas
 
 Vitual Links are established on a PPP basis between 2 Routers there are connected to common area, one of which shall be connected to OSPF Area0.
