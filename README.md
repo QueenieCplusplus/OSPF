@@ -42,6 +42,14 @@ LB
                   |    area1    |    area2    R --- Internet
                   |             |             |
                   -----------------------------
+------------------------------------------------------------------------------
+# OSPF Router ID
+
+Cisco IOS provides a method for assigning an OSPF ID equal to the desirable OSPF ID.
+
+    $router-id <OSPF ID> 
+    # OSPF id ranging from 0-255
+    
 
 
 (to be continued)
