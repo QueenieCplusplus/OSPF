@@ -2,6 +2,8 @@
 
 Open Shortest Path Forward
 
+------------------------------------------------------------------------------
+
 * main part:
 
 > Single Area & Mulitple Area & Stub Area
@@ -12,7 +14,17 @@ Open Shortest Path Forward
 
 > Link-state DB
 
-LB
+> LB
+
+------------------------------------------------------------------------------
+
+* virtual part:
+
+> Connection to Remote Area
+
+* NBMA, fully meshed
+
+------------------------------------------------------------------------------
 
 * cmd part:
 
@@ -25,12 +37,6 @@ LB
 > show ip ospf database
 
 > show ip ospf vitual-links
-
-* virtual part:
-
-> Connection to Remote Area
-
-* NBMA, fully meshed
 
 ------------------------------------------------------------------------------
 # OSPF Hierarchical Routing
