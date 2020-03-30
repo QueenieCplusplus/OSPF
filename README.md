@@ -110,7 +110,7 @@ e == thernet
 
 s == serial
 
-    $ip subnet-zero
+    ip subnet-zero
     
     > interface lo0
     > ip address 10.0.0.1 255.255.255.0
@@ -123,11 +123,13 @@ s == serial
     
     bandwidth 64
     
-    $router ospf 1
+    router ospf 1
     
     > network 10.0.0.0. 0.0.255.255 area0
     > network 10.10.0.0 0.0.255.255 area10
     > area0 range 10.0.0.0. 255.255.0.0
     > area0 range 10.10.0.0 255.255.0.0
     > area10 virtual-link 10.0.0.5
+    
+    ip classless
     
