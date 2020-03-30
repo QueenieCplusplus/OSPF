@@ -88,7 +88,7 @@ This feature enable LB of traffic destined for the same mask (network prefix).
          $maximum paths <# of paths> 
          # of paths, shall be under OSPF config
          # max num is 4
-         # if param is 1 in value, then it means no LB.
+         # if param is 1 in value, then it means no LB is enable.
 
 ------------------------------------------------------------------------------
 # Virtual Connection to Remote Areas
