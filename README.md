@@ -110,6 +110,9 @@ by entering cmd without param
     
     
              "Router" Link States (Area 0)
+             
+             
+       link state id: 10.0.0.4
 
  to see cmd output with param 10.2.0.2
  
@@ -121,6 +124,8 @@ by entering cmd without param
     
     
              "Net" Link States (Area 0)
+             
+       Link state id: 10.2.0.2 (addr of designated router)
       
              
    
