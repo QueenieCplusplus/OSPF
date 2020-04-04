@@ -1,6 +1,6 @@
 # OSPF
 
-Open Shortest Path Forward
+Open Shortest Path Forward is included in Link-State Advertisement (鏈路狀態通告)
 
 ------------------------------------------------------------------------------
 
